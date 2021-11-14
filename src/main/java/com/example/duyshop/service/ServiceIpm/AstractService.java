@@ -1,21 +1,23 @@
-package com.example.duyshop.service;
+package com.example.duyshop.service.ServiceIpm;
 
-import com.example.duyshop.dto.StaffDto;
+import com.example.duyshop.dto.*;
+import com.example.duyshop.entity.CategoryEntity;
+import com.example.duyshop.entity.ProductEntity;
 import com.example.duyshop.entity.StaffEntity;
-import com.example.duyshop.service.IService.IRoleService;
+import com.example.duyshop.service.RoleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.stream.Collectors;
 
 @Component
 public abstract class AstractService {
     @Autowired
-    IRoleService roleService;
+    RoleService roleService;
 
     protected Object map(Object data) {
+        // staff
         if (data instanceof StaffEntity){
             StaffEntity staffEntity = (StaffEntity) data;
             return StaffDto.builder()
@@ -43,7 +45,35 @@ public abstract class AstractService {
                 return null;
             }
         }
+        //category
+        if (data instanceof CategoryEntity){
+            CategoryEntity categoryEntity = (CategoryEntity) data;
+            return CategoryDto.builder()
+                    .id(categoryEntity.getId())
+                    .name(categoryEntity.getName()).build();
+        }else if (data instanceof CategoryDto){
+            CategoryDto categoryDto = (CategoryDto) data;
+            return CategoryEntity.builder()
+                    .id(categoryDto.getId())
+                    .name(categoryDto.getName()).build();
+        }
 
+        //product
+        if (data instanceof ProductEntity){
+            ProductEntity productEntity = (ProductEntity) data;
+            return ProductDto.builder()
+                    .id(productEntity.getId())
+                    .name(productEntity.getName())
+                    .price(productEntity.getPrice())
+                    .quantity(productEntity.getQuantity())
+                    .discount(productEntity.getDiscount())
+                    .images(productEntity.getImages()!= null ?
+                            productEntity.getImages().stream()
+                            .map(i ->(ImageDto) map(i)).collect(Collectors.toList()) : null)
+                    .brandDto((BrandDto) map(productEntity.getBrand()))
+                    .categoryDto((CategoryDto) map(productEntity.getCategory()))
+                    .build();
+        }
         return null;
     }
 }

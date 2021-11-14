@@ -6,10 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToMany;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.List;
 
 @Component
@@ -20,7 +17,9 @@ import java.util.List;
 @Table(name = "role")
 public class RoleEntity {
     @Id
+    @Column(length = 1)
     private Integer id;
+    @Column(length = 50,nullable = false)
     private String name;
     @JsonIgnore
     @OneToMany(mappedBy = "role")

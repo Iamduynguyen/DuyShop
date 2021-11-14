@@ -1,33 +1,32 @@
 package com.example.duyshop.entity;
 
-
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.*;
-import java.util.List;
+import java.io.Serializable;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-@Entity
-@Table(name = "category")
 @Builder(toBuilder = true)
+@AllArgsConstructor
+@NoArgsConstructor
+@Entity
+@Table(name = "image")
 @Component
-public class CategoryEntity {
-
+public class ImageEntity implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(length = 10)
     private Integer id;
-    private String name;
+    @Column(length = 50)
+    private String imageUrl;
     @JsonIgnore
-    @OneToMany(mappedBy = "category",fetch = FetchType.EAGER)
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private List<ProductEntity> products;
+    @ManyToOne
+    @JoinColumn
+    private ProductEntity product;
+
 }
