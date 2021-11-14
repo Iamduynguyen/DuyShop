@@ -1,6 +1,8 @@
 package com.example.duyshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -15,6 +17,7 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "staff")
+@Builder(toBuilder = true)
 public class StaffEntity {
 
     @Id
@@ -25,9 +28,11 @@ public class StaffEntity {
     private Date birthDate;
     private String image;
     private boolean active;
+    @JsonIgnore
     @ManyToOne
     @JoinColumn
     private RoleEntity role;
+    @JsonIgnore
     @OneToMany(mappedBy = "staff")
     private List<TransactionEntity> transactions;
 }

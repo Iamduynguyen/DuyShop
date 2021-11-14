@@ -1,26 +1,21 @@
 package com.example.duyshop.restcontroller;
 
+import com.example.duyshop.dto.StaffDto;
 import com.example.duyshop.entity.StaffEntity;
+import com.example.duyshop.service.IService.IStaffService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Login {
-//    @Autowired
-//    Staff staff;
-
+    @Autowired
+    IStaffService staffService;
 
     @GetMapping("/api/staffsession")
-//    public ResponseEntity<Staff> getstaff(){
-//        Staff staff = new Staff();
-//        staff.setEmail("abc");
-//        staff.setPassword("2333");
-//        return ResponseEntity.ok(staff);
-//    }
-    public String getStaff(){
-        StaffEntity staffEntity = new StaffEntity();
-        staffEntity.setEmail("a");
-        staffEntity.setPassword("b");
-        return "aa";
+    public ResponseEntity<?> getstaff(){
+        StaffDto staffDto = staffService.findByIdD(1);
+        return ResponseEntity.ok(staffDto);
     }
 }

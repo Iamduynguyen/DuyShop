@@ -1,5 +1,6 @@
 package com.example.duyshop.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -23,11 +24,14 @@ public class CustomerEntity {
     private String phoneNumber;
     private Integer rank;
     private String image;
+    @JsonIgnore
     @ManyToOne
     @JoinColumn
     private RoleEntity role;
+    @JsonIgnore
     @OneToMany(mappedBy = "customer")
     private List<TransactionEntity> transactionEntityList;
+    @JsonIgnore
     @OneToMany(mappedBy = "customer")
     private List<VoucherEntity> voucherList;
 }
