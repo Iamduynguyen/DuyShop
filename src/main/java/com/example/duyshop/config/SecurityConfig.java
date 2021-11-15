@@ -18,6 +18,7 @@ import org.springframework.web.filter.CorsFilter;
 import java.util.List;
 
 import static org.springframework.http.HttpMethod.GET;
+import static org.springframework.http.HttpMethod.POST;
 
 @Configuration
 @EnableWebSecurity
@@ -42,6 +43,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf().disable().cors().disable();
+        httpSecurity.authorizeRequests().antMatchers(POST,"/api/**").permitAll();
 //        httpSecurity.authorizeRequests().antMatchers(GET,"/api/**","/admin/**", "/Adminform/**").hasRole("ADMIN")
 //                .antMatchers("/checkout/**", "/cart/**", "/order").hasAnyRole("USER").antMatchers().authenticated()
 //                .anyRequest().permitAll();

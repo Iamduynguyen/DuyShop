@@ -6,12 +6,14 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
 
-@Builder(toBuilder = true)
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Builder(toBuilder = true)
 @Component
-public class RoleDto {
+public class CommentDto {
     private Integer id;
-    private String name;
+    private String comment;
+    private Integer productId;
+    private String create;
 }

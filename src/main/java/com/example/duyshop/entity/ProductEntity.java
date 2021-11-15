@@ -34,6 +34,8 @@ public class ProductEntity {
     private Integer views;
     @Column(length = 10,nullable = false)
     private Integer quantity;
+    @Column(length = 255)
+    private String title;
     @Column(length = 50,nullable = false)
     @OneToMany(mappedBy = "product")
     private List<OrderDetailEntity> orderDetails;

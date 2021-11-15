@@ -13,5 +13,5 @@ import org.springframework.stereotype.Component;
 @Component
 public class ImageDto {
     private Integer id;
-    private Integer name;
+    private String urlImage;
 }

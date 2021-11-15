@@ -2,6 +2,7 @@ package com.example.duyshop.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -15,10 +16,13 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "customer")
+@Builder(toBuilder = true)
 public class CustomerEntity {
     @Id
     private Integer id;
     private String email;
+    private String name;
+    private Boolean active;
     private String password;
     private String address;
     private String phoneNumber;

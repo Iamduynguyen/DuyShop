@@ -2,6 +2,7 @@ package com.example.duyshop.entity;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -14,6 +15,7 @@ import java.util.List;
 @AllArgsConstructor
 @Data
 @Entity
+@Builder(toBuilder = true)
 @Table(name = "role")
 public class RoleEntity {
     @Id

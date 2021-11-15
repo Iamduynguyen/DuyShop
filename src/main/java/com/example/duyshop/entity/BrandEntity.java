@@ -1,6 +1,7 @@
 package com.example.duyshop.entity;
 
 import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.stereotype.Component;
@@ -13,6 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 @Component
+@Builder(toBuilder = true)
 @Table(name = "brand")
 public class BrandEntity {
 

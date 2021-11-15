@@ -17,6 +17,8 @@ public class OrderDetailDto implements Serializable {
     private Integer id;
     private Integer quantity;
     private Integer transactionId;
-    private Integer customerId;
-    private Integer amount;
+    private ProductDto product;
+    public Integer getAmount(){
+        return product.getRealprice()*quantity;
+    }
 }

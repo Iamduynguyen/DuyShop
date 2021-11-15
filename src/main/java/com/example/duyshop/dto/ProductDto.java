@@ -27,4 +27,9 @@ public class ProductDto {
     private List<ImageDto> images;
     private BrandDto brandDto;
     private CategoryDto categoryDto;
+    private String title;
+
+    public Integer getRealprice(){
+        return price-discount;
+    }
 }
