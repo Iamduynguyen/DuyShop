@@ -4,44 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="11e3474c-0556-4f44-9e82-32946c6645f9" name="Default Changelist" comment="create dto class">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/CommentDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/CustomerDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/BrandService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/BrandServiceIpm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/CustomerServiceIpm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/ProductServiceIpm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/TransactionServiceIpm.java" afterDir="false" />
+    <list default="true" id="11e3474c-0556-4f44-9e82-32946c6645f9" name="Default Changelist" comment="map(Object)">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/UserDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/model/Mail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/admin/ProductApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/website/ProductApi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/UserServiceIpm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/config/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/ImageDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/ImageDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/OrderDetailDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/OrderDetailDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/ProductDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/ProductDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/RoleDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/RoleDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/TransactionDto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/TransactionDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/BrandEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/BrandEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/CommentEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/CommentEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/CustomerEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/CustomerEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/OrderDetailEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/OrderDetailEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/ProductEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/ProductEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/RoleEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/RoleEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/StaffEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/StaffEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/TransactionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/entity/TransactionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/reponsitory/ProductReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/reponsitory/ProductReponsitory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/CustomerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/CustomerService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ProductService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/AstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/AstractService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/TransactionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/TransactionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/config/SecurityConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/config/SecurityConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/dto/ProductDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/dto/ProductDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/BrandEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/BrandEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/CommentEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/CommentEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/CustomerEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/CustomerEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/OrderDetailEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/OrderDetailEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/ProductEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/ProductEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/RoleEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/RoleEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/StaffEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/StaffEntity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/TransactionEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/duyshop/entity/TransactionEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/ProductServiceIpm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/ProductServiceIpm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,13 +72,15 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -129,7 +105,8 @@
       <workItem from="1636389483672" duration="2132000" />
       <workItem from="1636719019926" duration="7259000" />
       <workItem from="1636908262364" duration="20000" />
-      <workItem from="1636940251172" duration="12903000" />
+      <workItem from="1636940251172" duration="13016000" />
+      <workItem from="1636979483785" duration="6866000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1636893512601</created>
@@ -145,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1636906625405</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="map(Object)">
+      <created>1636965911563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1636965911563</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +150,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="create" />
     <MESSAGE value="create dto class" />
-    <option name="LAST_COMMIT_MESSAGE" value="create dto class" />
+    <MESSAGE value="map(Object)" />
+    <option name="LAST_COMMIT_MESSAGE" value="map(Object)" />
   </component>
 </project>
