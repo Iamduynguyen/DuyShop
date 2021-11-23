@@ -19,4 +19,6 @@ public interface ProductReponsitory extends JpaRepository<ProductEntity,Integer>
     ProductEntity findByName(@Param("name")String name);
     @Query("select p from ProductEntity p where p.brand.id = :brandid")
     List<ProductEntity> getByBrand(@Param("brandid") Integer brandid, Pageable pageable);
+    @Query("select p from ProductEntity p where p.name like %:key% or p.title like %:key% or p.category.name like %:key%")
+    List<ProductEntity> getByKey(@Param("key") String key);
 }

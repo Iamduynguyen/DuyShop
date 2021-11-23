@@ -5,16 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="11e3474c-0556-4f44-9e82-32946c6645f9" name="Default Changelist" comment="map(Object)">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/dto/UserDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/model/Mail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/admin/ProductApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/website/ProductApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/UserServiceIpm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/reponsitory/ProductReponsitory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/reponsitory/ProductReponsitory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/admin/ProductApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/restapi/admin/AProductApi.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ProductService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/AstractService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/AstractService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/ProductServiceIpm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/duyshop/service/ServiceIpm/ProductServiceIpm.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -107,6 +103,8 @@
       <workItem from="1636908262364" duration="20000" />
       <workItem from="1636940251172" duration="13016000" />
       <workItem from="1636979483785" duration="6866000" />
+      <workItem from="1637377155110" duration="304000" />
+      <workItem from="1637549217656" duration="7504000" />
     </task>
     <task id="LOCAL-00001" summary="create">
       <created>1636893512601</created>

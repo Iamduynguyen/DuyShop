@@ -23,6 +23,7 @@ public abstract class AstractService {
     TransactionService transactionService;
     @Autowired
     ProductService productService;
+
     protected Object map(Object data) {
         // staff
         if (data instanceof StaffEntity){

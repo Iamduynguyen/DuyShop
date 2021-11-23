@@ -60,5 +60,10 @@ public class ProductServiceIpm extends AstractService implements ProductService 
         }catch (Exception e){ e.printStackTrace();return null; }
     }
 
+    @Override
+    public List<ProductDto> findByKey(String key) {
+        return productRepo.getByKey(key).stream().map(p-> (ProductDto) map(p)).collect(Collectors.toList());
+    }
+
 
 }

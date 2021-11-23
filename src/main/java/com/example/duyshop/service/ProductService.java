@@ -17,4 +17,5 @@ public interface ProductService {
     Boolean deleteProduct(Integer id);
     ProductDto findByName(String name);
     List<ProductDto> findBybrandId(Integer brandId, Pageable pageable);
+    List<ProductDto> findByKey(String key);
 }
